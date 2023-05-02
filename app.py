@@ -4,6 +4,17 @@ from flask import render_template
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return render_template("layout.html")
+def index():
+    return render_template("index.html")
+
+
+@app.route("/logIn")
+def log_in():
+    return render_template("logIn.html")
+
+
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
 
