@@ -41,11 +41,15 @@
                         </div>
                         
                         <button type="submit" class="btn button btn-danger">register</button>
-                        <a href="/logIn.html" class="btn button btn-danger">log in</a>
+                        <a href="/logIn" class="btn button btn-danger">log in</a>
                         </form>
+                        {% if error %}
+                            <p>{{ error }}</p>
+                        {% endif %}
 
                 </div>
             </div>
+            
            
         </div>
             

@@ -46,9 +46,14 @@
                         <button type="submit" class="btn button btn-danger">submit</button>
                         
                         </form>
+                        {% if error %}
+                            <p>{{ error }}</p>
+                        {% endif %}
 
                 </div>
             </div>
+
+            
            
         </div>
             
