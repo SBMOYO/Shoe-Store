@@ -1,16 +1,19 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
+{% for item in rows %}
 <div class="col-md-4 md-6">
     <div class="card" style="width: 18rem;">
-        <img src="static/assets/shoe.jpg" class="card-img-top" alt="...">
+        <img src="static/assets/uploads/{{item['shoe_image']}}" class="card-img-top" alt="shoe image">
         <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go somewhere</a>
+            <h5 class="card-title">Shoe Name: {{item["shoe_name"]}}</h5>
+            <p class="card-text">Size: {{item["shoe_size"]}}</p>
+            <p class="card-text">Stock: {{item["quantity"]}}</p>
+            <p class="card-text"> Colour: {{item["shoe_colour"]}}</p>
+            <a href="cart.html" class="btn btn-danger">add to cart</a>
         </div>
     </div>
 </div> 
+{% endfor %}
 
 {% endblock %}
