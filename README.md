@@ -1,4 +1,8 @@
-# final-project
+# Online shoe store
+
+#### Video Demo: https://youtu.be/3g4d0hZk5_Y
+
+#### Description:
 
 Welcome to our ecommerce webstore for selling shoes!
 
