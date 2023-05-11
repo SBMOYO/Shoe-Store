@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+    <table class="table table-striped table-hover">
+        <tr>
+        <th>SHOE NAME</th>
+        <th>COLOUR</th>
+        <th>PRICE</th>
+        <th>ACTION</th>
+        </tr>
+        {% for item in rows %}
+            <tr>
+            <td>{{item['shoe_name']}}</td>
+            <td>{{item['shoe_colour']}}</td>
+            <td>${{item['price']}}</td>
+            <td><form action="/remove_from_cart" method="post">
+                <input name="shoe_id" type="hidden" value="{{item['shoe_id']}}">
+                <button type="submit" class="btn btn-danger">remove</button>
+            </form></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
