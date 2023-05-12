@@ -14,4 +14,6 @@ When you're ready to check out, simply follow the prompts to complete your purch
 
 If you ever wish to delete your account, you can do so by clicking on the delete account button. And when you're finished shopping, don't forget to log out by clicking on the log out button.
 
+As an admin user, you have access to the admin page where you can manage the products on our website. To access the admin page, simply log in with your admin credentials and navigate to the upload page where you can add more shoes from there.
+
 Thank you for choosing our ecommerce webstore for your shoe shopping needs!
